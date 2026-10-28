@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "name": "MT Monochrome OLED",
+    "tech_name": "MT-Monochrome-OLED",
+    "direction": "Pure minimalist pitch-black OLED",
+    "source": "Curated palette for true pitch-black OLED displays and high-contrast minimalism",
+    "version": "0.1.0"
+  },
+  "color": {
+    "bg": {
+      "base": "#05070A",
+      "base_darker": "#000000",
+      "oled": "#000000",
+      "tile": "#14171C",
+      "raised": "#1C2026",
+      "surface": "#242A33",
+      "surface_hover": "#303742",
+      "surface_active": "#3E4654",
+      "osd_alpha": 0.85
+    },
+    "accent": {
+      "base": "#E5E5E5",
+      "strong": "#FFFFFF",
+      "dim": "#AAAAAA",
+      "text_on_accent": "#000000"
+    },
+    "accent_flavors": {
+      "platinum": "#E5E5E5",
+      "silver": "#C0C0C0",
+      "smoke": "#9E9E9E",
+      "steel": "#757575"
+    },
+    "window_controls": {
+      "close": "#E55353",
+      "minimize": "#E5A54B",
+      "maximize": "#4BB543"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#B3B3B3",
+      "disabled": "#808080"
+    },
+    "status": {
+      "destructive": "#E55353",
+      "success": "#4BB543",
+      "warning": "#E5A54B",
+      "petal_decorative": "#9E9E9E"
+    },
+    "border": {
+      "default": "#333A44",
+      "subtle": "#22272E",
+      "focus": "#FFFFFF"
+    },
+    "shadow_alpha": 0.55
+  },
+  "wcag_minimums": {
+    "body_text": 4.5,
+    "preferred_text": 7.0,
+    "ui_component": 3.0,
+    "pairs": [
+      ["text.primary", "bg.base"],
+      ["text.secondary", "bg.base"],
+      ["text.disabled", "bg.base"],
+      ["text.primary", "bg.surface"],
+      ["accent.base", "bg.base"],
+      ["accent.text_on_accent", "accent.base"],
+      ["status.destructive", "bg.base"],
+      ["status.success", "bg.base"],
+      ["status.warning", "bg.base"],
+      ["text.primary", "bg.oled"],
+      ["accent_flavors.platinum", "bg.base"],
+      ["accent_flavors.silver", "bg.base"],
+      ["accent_flavors.smoke", "bg.base"]
+    ]
+  }
+}

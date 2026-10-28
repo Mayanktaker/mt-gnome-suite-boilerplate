@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "name": "MT Amber Sunset",
+    "tech_name": "MT-Amber-Sunset",
+    "direction": "Warm ember & twilight obsidian",
+    "source": "Curated palette inspired by glowing embers and dusk skies",
+    "version": "0.1.0"
+  },
+  "color": {
+    "bg": {
+      "base": "#161311",
+      "base_darker": "#100E0C",
+      "oled": "#070605",
+      "tile": "#201B18",
+      "raised": "#29231F",
+      "surface": "#312A25",
+      "surface_hover": "#3F3630",
+      "surface_active": "#4F443C",
+      "osd_alpha": 0.85
+    },
+    "accent": {
+      "base": "#F59E0B",
+      "strong": "#FBBF24",
+      "dim": "#B45309",
+      "text_on_accent": "#180D03"
+    },
+    "accent_flavors": {
+      "amber": "#F59E0B",
+      "flame": "#EF4444",
+      "copper": "#D97706",
+      "rose": "#F43F5E"
+    },
+    "window_controls": {
+      "close": "#EF4444",
+      "minimize": "#F59E0B",
+      "maximize": "#10B981"
+    },
+    "text": {
+      "primary": "#FDF4ED",
+      "secondary": "#D4C4B7",
+      "disabled": "#9C8E84"
+    },
+    "status": {
+      "destructive": "#EF4444",
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "petal_decorative": "#F43F5E"
+    },
+    "border": {
+      "default": "#3E342D",
+      "subtle": "#2E2621",
+      "focus": "#F59E0B"
+    },
+    "shadow_alpha": 0.55
+  },
+  "wcag_minimums": {
+    "body_text": 4.5,
+    "preferred_text": 7.0,
+    "ui_component": 3.0,
+    "pairs": [
+      ["text.primary", "bg.base"],
+      ["text.secondary", "bg.base"],
+      ["text.disabled", "bg.base"],
+      ["text.primary", "bg.surface"],
+      ["accent.base", "bg.base"],
+      ["accent.text_on_accent", "accent.base"],
+      ["status.destructive", "bg.base"],
+      ["status.success", "bg.base"],
+      ["status.warning", "bg.base"],
+      ["text.primary", "bg.oled"],
+      ["accent_flavors.flame", "bg.base"],
+      ["accent_flavors.copper", "bg.base"],
+      ["accent_flavors.rose", "bg.base"]
+    ]
+  }
+}

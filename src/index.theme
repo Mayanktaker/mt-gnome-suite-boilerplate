@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=MT-Theme-Starter
+Comment=MT Theme Starter — modular GNOME dark theme suite by Mayanktaker (https://mayanktaker.com)
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=MT-Theme-Starter
+MetacityTheme=Adwaita
+IconTheme=MT-Theme-Starter-Icons
+CursorTheme=MT-Theme-Starter-Cursors
+ButtonLayout=:minimize,maximize,close

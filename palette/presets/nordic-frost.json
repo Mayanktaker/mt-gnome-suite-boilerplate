@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "name": "MT Nordic Frost",
+    "tech_name": "MT-Nordic-Frost",
+    "direction": "Nordic Frost & Arctic Cyan",
+    "source": "Curated palette inspired by polar night and arctic light",
+    "version": "0.1.0"
+  },
+  "color": {
+    "bg": {
+      "base": "#10141D",
+      "base_darker": "#0B0E14",
+      "oled": "#05070A",
+      "tile": "#171D28",
+      "raised": "#1E2533",
+      "surface": "#242E3E",
+      "surface_hover": "#2E3A4E",
+      "surface_active": "#39475E",
+      "osd_alpha": 0.85
+    },
+    "accent": {
+      "base": "#88C0D0",
+      "strong": "#A3D4E2",
+      "dim": "#5E81AC",
+      "text_on_accent": "#0B0E14"
+    },
+    "accent_flavors": {
+      "frost": "#88C0D0",
+      "glacier": "#81A1C1",
+      "aurora": "#A3BE8C",
+      "blaze": "#D08770"
+    },
+    "window_controls": {
+      "close": "#BF616A",
+      "minimize": "#EBCB8B",
+      "maximize": "#A3BE8C"
+    },
+    "text": {
+      "primary": "#ECEFF4",
+      "secondary": "#D8DEE9",
+      "disabled": "#8892B0"
+    },
+    "status": {
+      "destructive": "#BF616A",
+      "success": "#A3BE8C",
+      "warning": "#EBCB8B",
+      "petal_decorative": "#B48EAD"
+    },
+    "border": {
+      "default": "#2E3A4E",
+      "subtle": "#222A38",
+      "focus": "#88C0D0"
+    },
+    "shadow_alpha": 0.55
+  },
+  "wcag_minimums": {
+    "body_text": 4.5,
+    "preferred_text": 7.0,
+    "ui_component": 3.0,
+    "pairs": [
+      ["text.primary", "bg.base"],
+      ["text.secondary", "bg.base"],
+      ["text.disabled", "bg.base"],
+      ["text.primary", "bg.surface"],
+      ["accent.base", "bg.base"],
+      ["accent.text_on_accent", "accent.base"],
+      ["status.destructive", "bg.base"],
+      ["status.success", "bg.base"],
+      ["status.warning", "bg.base"],
+      ["text.primary", "bg.oled"],
+      ["accent_flavors.glacier", "bg.base"],
+      ["accent_flavors.aurora", "bg.base"],
+      ["accent_flavors.blaze", "bg.base"]
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "org.gtk.Gtk3theme.MT-Theme-Starter",
+  "branch": "3.22",
+  "runtime": "org.freedesktop.Platform",
+  "sdk": "org.freedesktop.Sdk",
+  "runtime-version": "26.08",
+  "build-extension": true,
+  "appstream-compose": false,
+  "separate-locales": false,
+  "modules": [
+    {
+      "name": "mt-theme-starter",
+      "buildsystem": "simple",
+      "build-commands": [
+        "cp -a MT-Theme-Starter/gtk-3.0/. ${FLATPAK_DEST}/"
+      ],
+      "sources": [
+        {
+          "type": "dir",
+          "path": "stage",
+          "skip": [
+            ".git"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "appdata",
+      "buildsystem": "simple",
+      "build-commands": [
+        "mkdir -p ${FLATPAK_DEST}/share/appdata",
+        "cp org.gtk.Gtk3theme.MT-Theme-Starter.appdata.xml ${FLATPAK_DEST}/share/appdata"
+      ],
+      "sources": [
+        {
+          "type": "file",
+          "path": "org.gtk.Gtk3theme.MT-Theme-Starter.appdata.xml"
+        }
+      ]
+    }
+  ]
+}
